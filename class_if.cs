@@ -8,7 +8,7 @@ namespace lab1
         {
             if (x >= 0) return x;
 
-            else return Math.Abs(x);           
+            else return x * (-1);           
         }
 
         public bool is35(int x)
