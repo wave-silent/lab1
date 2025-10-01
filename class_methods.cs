@@ -8,8 +8,8 @@ namespace lab1
         public double fraction(double x)
         {
             int int_x;
-            int_x = Convert.ToInt32(x);
-            return Math.Abs(x - int_x);
+            int_x = (int) x;
+            return x - int_x;
         }
 
         public int chatToNum(char x)
