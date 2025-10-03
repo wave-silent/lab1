@@ -24,7 +24,7 @@ namespace lab1{
                                     Console.Write("Введите вещественное число x: ");
                                     //x = double.Parse(Console.ReadLine());
                                     x = Convert.ToDouble(Console.ReadLine());
-                                    methods pr1 = new methods();
+                                    Methods pr1 = new Methods();
                                     double result = pr1.fraction(x);
                                     Console.WriteLine("Результат: " + result);
                                     break;
@@ -35,7 +35,7 @@ namespace lab1{
                                     char x;
                                     Console.Write("Введите один символ из списка \"0 1 2 3 4 5 6 7 8 9\": ");
                                     x = Convert.ToChar(Console.ReadLine());
-                                    methods pr3 = new methods();
+                                    Methods pr3 = new Methods();
                                     int result = pr3.chatToNum(x);
                                     Console.WriteLine("Результат: " + result);
                                     break;
@@ -47,7 +47,7 @@ namespace lab1{
                                     bool result;
                                     Console.Write("Введите число x: ");
                                     x = Convert.ToInt32(Console.ReadLine());
-                                    methods pr5 = new methods();
+                                    Methods pr5 = new Methods();
                                     result = pr5.is2Digits(x);
                                     Console.WriteLine("Результат: " + result);
                                     break;
@@ -61,7 +61,7 @@ namespace lab1{
                                     a = Convert.ToInt32(Console.ReadLine());
                                     b = Convert.ToInt32(Console.ReadLine());
                                     num = Convert.ToInt32(Console.ReadLine());
-                                    methods pr7 = new methods();
+                                    Methods pr7 = new Methods();
                                     result = pr7.isInRange(a, b, num);
                                     Console.WriteLine("Результат: " + result);
                                     break;
@@ -75,7 +75,7 @@ namespace lab1{
                                     a = Convert.ToInt32(Console.ReadLine());
                                     b = Convert.ToInt32(Console.ReadLine());
                                     c = Convert.ToInt32(Console.ReadLine());
-                                    methods pr9 = new methods();
+                                    Methods pr9 = new Methods();
                                     result = pr9.isEqual(a, b, c);
                                     Console.WriteLine("Результат: " + result);
                                     break;
@@ -98,7 +98,7 @@ namespace lab1{
                                     int result;
                                     Console.Write("Введите значение x: ");
                                     x = Convert.ToInt32(Console.ReadLine());
-                                    if1 pr1 = new if1();
+                                    Methods pr1 = new Methods();
                                     result = pr1.abs(x);
                                     Console.WriteLine("Результат: " + result);
                                     break;
@@ -109,7 +109,7 @@ namespace lab1{
                                     bool result;
                                     Console.Write("Напишите значение x: ");
                                     x = Convert.ToInt32(Console.ReadLine());
-                                    if1 pr3 = new if1();
+                                    Methods pr3 = new Methods();
                                     result = pr3.is35(x);
                                     Console.WriteLine("Результат: " + result);
                                     break;
@@ -122,7 +122,7 @@ namespace lab1{
                                     x = Convert.ToInt32(Console.ReadLine());
                                     y = Convert.ToInt32(Console.ReadLine());
                                     z = Convert.ToInt32(Console.ReadLine());
-                                    if1 pr5 = new if1();
+                                    Methods pr5 = new Methods();
                                     result = pr5.max3(x, y, z);
                                     Console.WriteLine("Результат: " + result);
                                     break;
@@ -134,7 +134,7 @@ namespace lab1{
                                     Console.WriteLine("Введите значение x, y: ");
                                     x = Convert.ToInt32(Console.ReadLine());
                                     y = Convert.ToInt32(Console.ReadLine());
-                                    if1 pr7 = new if1();
+                                    Methods pr7 = new Methods();
                                     result = pr7.sum2(x, y);
                                     Console.WriteLine("Результат: " + result);
                                     break;
@@ -145,7 +145,7 @@ namespace lab1{
                                     string result;
                                     Console.Write("Напишите значение x: ");
                                     x = Convert.ToInt32(Console.ReadLine());
-                                    if1 pr9 = new if1();
+                                    Methods pr9 = new Methods();
                                     result = pr9.day(x);
                                     Console.WriteLine("Результат: " + result);
                                     break;
@@ -166,7 +166,7 @@ namespace lab1{
                                     string result;
                                     Console.Write("Напишите значение x: ");
                                     x = Convert.ToInt32(Console.ReadLine());
-                                    for1 pr1 = new for1();
+                                    Methods pr1 = new Methods();
                                     result = pr1.listNums(x);
                                     Console.WriteLine("Результат: {0}", result);
                                     break;
@@ -177,7 +177,7 @@ namespace lab1{
                                     string result;
                                     Console.Write("Напишите значение x: ");
                                     x = Convert.ToInt32(Console.ReadLine());
-                                    for1 pr3 = new for1();
+                                    Methods pr3 = new Methods();
                                     result = pr3.chet(x);
                                     Console.WriteLine("Результат: " + result);
                                     break;
@@ -188,7 +188,7 @@ namespace lab1{
                                     int result;
                                     Console.Write("Напишите значение x: ");
                                     x = Convert.ToInt32(Console.ReadLine());
-                                    for1 pr5 = new for1();
+                                    Methods pr5 = new Methods();
                                     result = pr5.numLen(x);
                                     Console.WriteLine("Результат: " + result);
                                     break;
@@ -198,7 +198,7 @@ namespace lab1{
                                     int x;
                                     Console.Write("Напишите значение x: ");
                                     x = Convert.ToInt32(Console.ReadLine());
-                                    for1 pr7 = new for1();
+                                    Methods pr7 = new Methods();
                                     pr7.square(x);
                                     break;
                                 }
@@ -207,7 +207,7 @@ namespace lab1{
                                     int x;
                                     Console.Write("Напишите значение x: ");
                                     x = Convert.ToInt32(Console.ReadLine());
-                                    for1 pr9 = new for1();
+                                    Methods pr9 = new Methods();
                                     pr9.rightTriangle(x);
                                     break;
                                 }
@@ -237,7 +237,7 @@ namespace lab1{
                                         int num = Convert.ToInt32(Console.ReadLine());
                                         arr[i] = num;
                                     }
-                                    massive pr1 = new massive();
+                                    Methods pr1 = new Methods();
                                     result = pr1.findFirst(arr, x);
                                     Console.WriteLine("Результат: " + result);
                                     break;
@@ -255,7 +255,7 @@ namespace lab1{
                                         int num = Convert.ToInt32(Console.ReadLine());
                                         arr[i] = num;
                                     }
-                                    massive pr3 = new massive();
+                                    Methods pr3 = new Methods();
                                     result = pr3.maxAbs(arr);
                                     Console.WriteLine("Результат: " + result);
                                     break;
@@ -287,7 +287,7 @@ namespace lab1{
                                         int num = Convert.ToInt32(Console.ReadLine());
                                         ins[i] = num;
                                     }
-                                    massive pr5 = new massive();
+                                    Methods pr5 = new Methods();
                                     res = pr5.add(arr, ins, pos);
                                     Console.Write("Результат: [");
                                     for (int i = 0; i < (n1+n2); i++)
@@ -310,7 +310,7 @@ namespace lab1{
                                         int num = Convert.ToInt32(Console.ReadLine());
                                         arr[i] = num;
                                     }
-                                    massive pr7 = new massive();
+                                    Methods pr7 = new Methods();
                                     res = pr7.reverseBack(arr);
                                     Console.Write("Результат: [");
                                     for (int i = 0; i < n; i++)
@@ -336,10 +336,10 @@ namespace lab1{
                                     }                                                                       
                                     Console.Write("Напишите значение x: ");
                                     x = Convert.ToInt32(Console.ReadLine());
-                                    massive pr9_help = new massive();
+                                    Methods pr9_help = new Methods();
                                     count = pr9_help.count_res(arr, x);
                                     int[] res = new int[count];
-                                    massive pr9 = new massive();
+                                    Methods pr9 = new Methods();
                                     res = pr9.findAll(arr, x);
                                     Console.Write("Результат: [");
                                     for (int i = 0; i < res.Length; i++)
