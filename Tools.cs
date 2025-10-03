@@ -1,10 +1,8 @@
 using System;
-
-
 namespace lab1
 {
     //Методы
-    public class methods
+    public class Methods
     {
         public double fraction(double x)
         {
@@ -21,63 +19,102 @@ namespace lab1
 
         public bool is2Digits(int x)
         {
+            // x = Math.Abs(x) or *(-1);
             string str_x;
             int len_x;
-            // x = Math.Abs(x) либо *(-1);     -  если мы берем еще отрицательные числа 
             str_x = Convert.ToString(x);
             len_x = str_x.Length;
-            if (len_x == 2) return true;
-            else return false;
-
+            if (len_x == 2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public bool isInRange(int a, int b, int num)
         {
             if (a > b)
             {
-                if ((num <= a) & (num >= b)) return true;
-                else return false;
+                if ((num <= a) & (num >= b))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             else
             {
-                if ((num <= b) & (num >= a)) return true;
-                else return false;
+                if ((num <= b) & (num >= a))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-
         }
 
         public bool isEqual(int a, int b, int c)
         {
-            if ((a == b) & (b == c)) return true;
+            if ((a == b) & (b == c))
+            {
+                return true;
+            }
             return false;
         }
-    }
-    //Условия
-    public class if1
-    {
+
+        //Условия
         public int abs(int x)
         {
-            if (x >= 0) return x;
-
-            else return x * (-1);
+            if (x >= 0)
+            {
+                return x;
+            }
+            else
+            {
+                return x * (-1);
+            }
         }
 
         public bool is35(int x)
         {
-            if (((x % 3) == 0) & ((x % 5) == 0)) return false;
+            if (((x % 3) == 0) & ((x % 5) == 0))
+            {
+                return false;
+            }
+            else if (((x % 3) == 0) | ((x % 5) == 0))
+            {
+                return true;
+            }
 
-            else if (((x % 3) == 0) | ((x % 5) == 0)) return true;
-
-            else return false;
+            else
+            {
+                return false;
+            }
         }
 
         public int max3(int x, int y, int z)
         {
-            if ((x >= y) & (x >= z)) return x;
+            if ((x >= y) & (x >= z))
+            {
+                return x;
+            }
 
-            else if ((y >= x) & (y >= z)) return y;
+            else if ((y >= z))
+            {
+                return y;
+            }
 
-            else return z;
+            else
+            {
+                return z;
+            }
         }
 
         public int sum2(int x, int y)
@@ -85,9 +122,15 @@ namespace lab1
             int sum;
             sum = x + y;
 
-            if ((sum >= 10) & (sum < 19)) return 20;
+            if ((sum >= 10) & (sum < 19))
+            {
+                return 20;
+            }
 
-            else return sum;
+            else
+            {
+                return sum;
+            }
         }
 
         public String day(int x)
@@ -135,10 +178,9 @@ namespace lab1
             }
         }
 
-    }
-    //Циклы
-    public class for1
-    {
+
+        //Циклы
+
         public String listNums(int x)
         {
             string result = "";
@@ -186,7 +228,6 @@ namespace lab1
 
         public void rightTriangle(int x)
         {
-            // new string - конструктор System
             string result = "";
             for (int i = (x - 1); i >= 0; i--)
             {
@@ -194,15 +235,18 @@ namespace lab1
                 Console.WriteLine(result);
             }
         }
-    }
-    //Массивы
-    public class massive
-    {
+
+        //Массивы
+
+
         public int findFirst(int[] arr, int x)
         {
             for (int i = 0; i < arr.Length; i++)
             {
-                if (arr[i] == x) return i;
+                if (arr[i] == x)
+                {
+                    return i;
+                }
             }
 
             return -1;
@@ -213,7 +257,10 @@ namespace lab1
             int max_el = 0;
             for (int i = 0; i < arr.Length; i++)
             {
-                if (Math.Abs(arr[i]) > Math.Abs(max_el)) max_el = arr[i];
+                if (Math.Abs(arr[i]) > Math.Abs(max_el))
+                {
+                    max_el = arr[i];
+                }
             }
             return max_el;
         }
@@ -225,17 +272,14 @@ namespace lab1
             {
                 res[i] = arr[i];
             }
-
             for (int i = pos; i < (pos + ins.Length); i++)
             {
                 res[i] = ins[i - pos];
             }
-
             for (int i = (pos + ins.Length); i < (arr.Length + ins.Length); i++)
             {
                 res[i] = arr[i - ins.Length];
             }
-
             return res;
         }
 
